@@ -1,0 +1,31 @@
+.head_border{
+    border:3px solid rgba(0,0,0,.1) ;
+}
+.personal_details_border{
+    border: 3px solid rgba(135, 206, 235, 1);
+}
+.academic_qualification_border{
+    border: 3px solid rgba(0, 0, 139, 1);
+}
+.work_exp_border{
+    border: 3px solid rgba(139, 0, 0, 1);
+}
+.reference-table{
+    width: 193pt
+}
+.declaration_border{
+    border: 3px solid rgba(255, 0, 0, 1); /* Red color */
+}
+.canvas{
+    border: 3px dotted;
+}
+
+.thanks-body {
+    background-color: #f8f9fa;
+    padding-top: 50px;
+    text-align: center;
+}
+.thank-you-message {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
