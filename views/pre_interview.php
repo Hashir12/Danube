@@ -236,7 +236,7 @@ if (isset($_GET['id'])) {
                                   cols="30" rows="2" required><?php echo isset($candidate_data['other_detail']) ? $candidate_data['other_detail']['interests'] : 'Hobbies / Interests'; ?></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="reasonsForChoosing"><b>* What are your primary reasons for choosing Danube Group ?</b></label>
+                        <label for="reasonsForChoosing"><b>* What are your primary reasons for choosing us ?</b></label>
                         <select class="form-control" name="reasonsForChoosing" id="reasonsForChoosing" required  <?php echo isset($candidate_data['other_detail']['joining_reason']) ? 'readonly' : ''; ?>>
                             <option <?php echo isset($candidate_data['other_detail']['joining_reason']) ? ($candidate_data['other_detail']['joining_reason'] == 'job_nature' ? 'selected' : '') : ''; ?> value="job_nature">Nature of Job/Role</option>
                             <option <?php echo isset($candidate_data['other_detail']['joining_reason']) ? ($candidate_data['other_detail']['joining_reason'] == 'company_reput' ? 'selected' : '') : ''; ?> value="company_reput">Reputation of the company</option>
@@ -254,7 +254,7 @@ if (isset($_GET['id'])) {
                             <?php echo isset($candidate_data['other_detail']) ? $candidate_data['other_detail']['languages'] : ''; ?>>
                     </div>
                     <div class="form-group">
-                        <label><b>* Do you have any friends or relatives working in Danube?</b></label><br>
+                        <label><b>* Do you have any friends or relatives working with us?</b></label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="friendsOrRelatives" id="friendsOrRelativesYes" value="yes"
                                 <?php echo isset($candidate_data['other_detail']['relative_working']) ? ($candidate_data['other_detail']['relative_working'] == 'yes' ? 'checked' : '') : ''; ?>>
