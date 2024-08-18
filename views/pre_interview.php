@@ -1,9 +1,17 @@
 <?php
 require_once('../classes/Candidate.php');
+$submit = true;
 if (isset($_GET['id'])) {
-    $candidate_id = $_GET['id'];
+    $candidate_id = filter_var($_GET['id'], FILTER_VALIDATE_INT);
+
+    if ($candidate_id === false) {
+        echo 'Invalid candidate ID';
+        return;
+    }
+
     $candidate = new Candidate();
     $candidate_data = $candidate->getCandidateDetails($candidate_id);
+    $submit = false;
     if (!$candidate_data) {
         print_r('No candidate found');
         return ;
@@ -523,9 +531,11 @@ if (isset($_GET['id'])) {
                     </div>
                 </div>
             </div>
+            <?php if (!empty($submit)) { ?>
             <div class="text-right">
                 <button class="btn btn-success mb-3 mr-3" type="submit"><b>Submit</b></button>
             </div>
+            <?php } ?>
         </form>
     </div>
     <div class="mb-5 d-flex justify-content-between">
