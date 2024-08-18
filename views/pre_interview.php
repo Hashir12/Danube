@@ -539,7 +539,7 @@ if (isset($_GET['id'])) {
         </form>
     </div>
     <div class="mb-5 d-flex justify-content-between">
-        <p><b>Copyright © 2023 Danube Group (https://www.aldanube.com/).</b>  All rights reserved.</p>
+        <p><b>Copyright © 2023.</b>  All rights reserved.</p>
         <b class="m-0">Version</b>1.0.0
     </div>
 </div>
