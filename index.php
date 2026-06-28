@@ -1,5 +1,5 @@
 <?php
-require_once('classes/Candidate.php');
+require_once('autoload.php');
 $candidateObj = new Candidate();
 $candidates = $candidateObj->getCandidates();
 ?>

@@ -1,10 +1,4 @@
 <?php
-require_once(__DIR__.'/Database.php');
-require_once(__DIR__.'/AcademicQualification.php');
-require_once(__DIR__.'/WorkExperience.php');
-require_once(__DIR__.'/Reference.php');
-require_once(__DIR__.'/SalaryDetails.php');
-require_once(__DIR__.'/OtherDetails.php');
 class Candidate
 {
     protected $connection;
@@ -62,7 +56,7 @@ class Candidate
             OtherDetails::saveOtherDetails($lastInsertId, $data,$this->connection);
             $this->connection->commit();
             return true;
-        } catch (PDOException $e) {
+        } catch (Throwable $e) {
             $this->connection->rollback();
             return false;
         }

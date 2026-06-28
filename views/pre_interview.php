@@ -1,5 +1,5 @@
 <?php
-require_once('../classes/Candidate.php');
+require_once('../autoload.php');
 $submit = true;
 if (isset($_GET['id'])) {
     $candidate_id = filter_var($_GET['id'], FILTER_VALIDATE_INT);

@@ -1,6 +1,5 @@
 <?php
-require_once('../classes/Database.php');
-require_once('../classes/Candidate.php');
+require_once('../autoload.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $candidate = new Candidate();
